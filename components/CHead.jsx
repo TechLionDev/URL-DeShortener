@@ -4,7 +4,7 @@ const CHead = ({title}) => {
     return (
         <>
             <Head>
-                <title>{title} | TechLion Dev's Link DeShortener</title>
+                <title>{title} | TechLion Dev&apos;s Link DeShortener</title>
             </Head>
         </>
     );

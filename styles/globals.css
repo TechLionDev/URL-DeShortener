@@ -1,0 +1,70 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Solitreo&display=swap");
+
+html,
+body {
+  font-family: "Quicksand", sans-serif;
+}
+
+.handwritten {
+  font-family: "Solitreo", cursive;
+}
+
+/* Custom Form Changes */
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    transition: background-color 5000s ease-in-out 0s;
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+/* End Custom Form Changes */
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgb(14,165,233);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: rgb(2,132,199);
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+/* End Custom Scrollbar */
+
+
+@keyframes slideInFromTop {
+  0% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.animate-toast-in {
+  animation: slideInFromTop 0.3s ease-in-out;
+}
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
